@@ -1,0 +1,29 @@
+/*
+All code copyright 2010 by Jay Crossler unless otherwise attributed - CC BY/3.0 License - wecreategeames.com
+
+Cash.js is a javascript image caching library to be used as an addon to a web page.  Cash uses HTML5 offline storage to convert images into strings and save them in the browser's memory
+
+Best used when called from another function, such as "game.js"
+
+var Game = {
+	initTimer: 0, //holds id of main game timer
+
+	prepareInit: function() { //waits until other js is loaded and ready before initing the game
+		var interval = 1000;
+		Game.initTimer = setInterval(Game.checkInitReady, interval);
+	},
+	checkInitReady: function() { //waits until other js is loaded and ready before initing the game
+		if (Cash.is_ready) {
+			console.log("Cash ready, starting game.");
+			clearInterval(Game.initTimer);
+			Game.initGame();
+		} else {
+			console.log("Cash not ready, waiting...");
+		}
+	},
+	initGame: function() {
+		....
+	}
+}
+
+*/
