@@ -15,7 +15,7 @@ var Cash = { //object to save images into HTML5 DB
 	//Note, the biggest issue with dealing with an HTML5 Database is that all calls are asynchronous
 	db: 0, //database id
 	imageList: [], //list of currently cached images
-	storeInAppCache: true, // if false, use HTML5-db. if true, use App Cache
+	storeInAppCache: fale, // if false, use HTML5-db. if true, use App Cache
 	is_ready: false,
 	loadToImg: function(src, img, makecanvas) { // load src into img from cache if exists 
 	  if (Cash.storeInAppCache) {
